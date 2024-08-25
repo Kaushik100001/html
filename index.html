@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Tester</h1>
+
+        <h2>Test POST Request</h2>
+        <form id="post-form">
+            <textarea
+                id="post-data"
+                placeholder='Enter JSON data, e.g., {"data":["M","1","334","4","B","Z","a"]}'
+                required
+            ></textarea>
+            <button type="submit">Send POST Request</button>
+        </form>
+        <pre id="post-response">Response will appear here...</pre>
+
+        <h2>Test GET Request</h2>
+        <button id="get-button">Send GET Request</button>
+        <pre id="get-response">Response will appear here...</pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
